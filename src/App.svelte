@@ -4,9 +4,9 @@
 </script>
 
 <main>
-  <h1>Can I go to LA today?</h1>
-
-  <div class="hero">
-    <Calendar />
+  <div class="pure-g">
+    <h1>Can I get to LA today?</h1>
   </div>
+
+  <Calendar />
 </main>

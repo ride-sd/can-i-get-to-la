@@ -10,7 +10,7 @@ type CalendarDataPoint = {
   value: number;
 }
 
-export function generateDailyOverview(inputData: DataPoint[]): CalendarDataPoint[] {
+export function generateDailyOverview(inputData: DataPoint[], start: Date): CalendarDataPoint[] {
   const sortedData = [...inputData].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
   const dailyData: CalendarDataPoint[] = [];
 
@@ -30,7 +30,7 @@ export function generateDailyOverview(inputData: DataPoint[]): CalendarDataPoint
       }
   }
 
-  return dailyData;
+  return dailyData.filter(dataPoint => dataPoint.date >= start.toISOString().slice(0, 10));
 }
 
 export function systemDarkModeToTheme(window: Window): 'light' | 'dark' {
@@ -39,4 +39,13 @@ export function systemDarkModeToTheme(window: Window): 'light' | 'dark' {
   }
 
   return 'light';
+}
+
+export function groupBy<T>(arr: T[], fn: (item: T) => any) {
+  return arr.reduce<Record<string, T[]>>((prev, curr) => {
+      const groupKey = fn(curr);
+      const group = prev[groupKey] || [];
+      group.push(curr);
+      return { ...prev, [groupKey]: group };
+  }, {});
 }
