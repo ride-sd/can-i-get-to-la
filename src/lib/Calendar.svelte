@@ -5,12 +5,12 @@
   import { groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
   import spreadSheet from './../data/spreadsheet.json';
 
+  const data = generateDailyOverview(spreadSheet, new Date(2023, 0, 1));
+  const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
+
+  const months = Object.keys(groupedData);
+
   onMount(async () => {
-    const data = generateDailyOverview(spreadSheet, new Date(2023, 0, 1));
-    const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
-
-    console.log(groupedData)
-
     const baseOptions = {
       range: 1,
       theme: systemDarkModeToTheme(window),
@@ -37,21 +37,8 @@
 </script>
 
 <div class="pure-g">
-  <div id="cal-heatmap-2023-01">
-  </div>
-
-  <div id="cal-heatmap-2023-02">
-  </div>
-
-  <div id="cal-heatmap-2023-03">
-  </div>
-
-  <div id="cal-heatmap-2023-04">
-  </div>
-
-  <div id="cal-heatmap-2023-05">
-  </div>
-
-  <div id="cal-heatmap-2023-06">
-  </div>
+  {#each months as month}
+    <div id="cal-heatmap-{month}">
+    </div>
+  {/each}
 </div>

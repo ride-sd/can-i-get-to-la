@@ -30,7 +30,9 @@ export function generateDailyOverview(inputData: DataPoint[], start: Date): Cale
       }
   }
 
-  return dailyData.filter(dataPoint => dataPoint.date >= start.toISOString().slice(0, 10));
+  return dailyData
+          .filter(dataPoint => dataPoint.date >= start.toISOString().slice(0, 10))
+          .filter(dataPoint => dataPoint.date <= today.toISOString().slice(0, 10));
 }
 
 export function systemDarkModeToTheme(window: Window): 'light' | 'dark' {
