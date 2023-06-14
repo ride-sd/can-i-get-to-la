@@ -51,7 +51,7 @@
 </div>
 
 <div class="pure-g center">
-  <p class=""> The Pacific Surfliner has been interrupted between Sand Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
+  <p class="explanation"> The Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
 </div>
 
 <div class="pure-g center">
@@ -60,8 +60,3 @@
     </div>
   {/each}
 </div>
-
-<div class="pure-g center">
-  <button class="button-xlarge pure-button button-success">Let's Do Something About It</button>
-</div>
-
