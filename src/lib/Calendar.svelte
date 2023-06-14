@@ -2,13 +2,19 @@
   import CalHeatmap from 'cal-heatmap';
   import { onMount } from "svelte";
 
-  import { groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
+  import { nonRunningDays, totalDays, currentlyRunning, groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
   import spreadSheet from './../data/spreadsheet.json';
 
   const data = generateDailyOverview(spreadSheet, new Date(2023, 0, 1));
   const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
 
   const months = Object.keys(groupedData);
+  const canIGoToday = currentlyRunning(data);
+
+  const nonRunning = nonRunningDays(data);
+  const total = totalDays(data);
+
+  const nonRunningPercent = Math.floor((nonRunning / total) * 100);
 
   onMount(async () => {
     const baseOptions = {
@@ -36,7 +42,19 @@
   })
 </script>
 
-<div class="pure-g">
+<div class="pure-g center">
+  {#if canIGoToday}
+    <h2 class="response running"> YES </h2>
+  {:else}
+    <h2 class="response not-running"> NOPE </h2>
+ {/if}
+</div>
+
+<div class="pure-g center">
+  <p> The LOSSAN corridor has been interrupted for {nonRunning} days out of {total} this year ({nonRunningPercent}%)</p>
+</div>
+
+<div class="pure-g center">
   {#each months as month}
     <div id="cal-heatmap-{month}">
     </div>

@@ -4,8 +4,8 @@
 </script>
 
 <main>
-  <div class="pure-g">
-    <h1>Can I get to LA today?</h1>
+  <div class="pure-g center">
+    <h1 class="title">Can I get to LA today?</h1>
   </div>
 
   <Calendar />
