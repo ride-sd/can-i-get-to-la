@@ -44,14 +44,14 @@
 
 <div class="pure-g center">
   {#if canIGoToday}
-    <h2 class="response running"> YES </h2>
+    <h2 class="response running"> YES <small>(however)</small></h2>
   {:else}
     <h2 class="response not-running"> NOPE </h2>
  {/if}
 </div>
 
 <div class="pure-g center">
-  <p> The LOSSAN corridor has been interrupted for {nonRunning} days out of {total} this year ({nonRunningPercent}%)</p>
+  <p class=""> The Pacific Surfliner has been interrupted between Sand Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
 </div>
 
 <div class="pure-g center">
@@ -60,3 +60,8 @@
     </div>
   {/each}
 </div>
+
+<div class="pure-g center">
+  <button class="button-xlarge pure-button button-success">Let's Do Something About It</button>
+</div>
+

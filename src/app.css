@@ -36,9 +36,21 @@ h1 {
   line-height: 1.1;
 }
 
-.title {
-  font-size: 3.2em;
+.response {
+  font-size: 4.8em;
   line-height: 1.1;
+}
+
+.running {
+  color: rgb(26, 152, 80);
+}
+
+small {
+  font-size: 20%;
+}
+
+.not-running {
+  color: rgb(244, 109, 67);
 }
 
 .hero {
@@ -51,6 +63,42 @@ h1 {
 .card {
   padding: 2em;
 }
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(26, 152, 80);
+}
+
+.button-error {
+    background: rgb(244, 109, 67);
+    /* this is a maroon */
+}
+
+.button-xsmall {
+  font-size: 70%;
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.button-large {
+  font-size: 110%;
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+
 
 #app {
   max-width: 1280px;
