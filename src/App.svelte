@@ -5,7 +5,7 @@
 
 <main>
   <div class="pure-g center">
-    <h1 class="title">Can I Get to LA Today?</h1>
+    <h1 class="title">Can I Take the Train to LA Today?</h1>
   </div>
 
   <Calendar />
