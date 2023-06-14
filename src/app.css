@@ -95,7 +95,9 @@ small {
 }
 
 .button-xlarge {
+  margin: 2.4em;
   font-size: 125%;
+  font-weight: bold;
 }
 
 
