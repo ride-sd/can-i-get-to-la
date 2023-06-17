@@ -80,5 +80,5 @@ function isRunning(dataPoint : CalendarDataPoint) {
 
 function today(): Date {
   const now = new Date();
-  return new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate());
 }
