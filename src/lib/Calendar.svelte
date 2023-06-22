@@ -51,7 +51,7 @@
 </div>
 
 <div class="pure-g center">
-  <p class="explanation"> The Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
+  <p class="explanation"> The Amtrak Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
 </div>
 
 <div class="pure-g center">
