@@ -2,8 +2,8 @@
   import CalHeatmap from 'cal-heatmap';
   import { onMount } from "svelte";
 
-  import { nonRunningDays, totalDays, currentlyRunning, groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
-  import spreadSheet from './../data/spreadsheet.json';
+  import { nonRunningDays, totalDays, currentlyRunning, groupBy, generateDailyOverview, systemDarkModeToTheme} from '../lib/utils';
+  import spreadSheet from '../data/spreadsheet.json';
 
   const data = generateDailyOverview(spreadSheet, new Date(2023, 0, 1));
   const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
