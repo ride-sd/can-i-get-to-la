@@ -42,7 +42,7 @@
   })
 </script>
 
-<div class="pure-g center">
+<div class="container mx-auto">
   {#if canIGoToday}
     <h2 class="response running"> YES <small>(however)</small></h2>
   {:else}
@@ -50,13 +50,15 @@
  {/if}
 </div>
 
-<div class="pure-g center">
+<div class="container mx-auto">
   <p class="explanation"> The Amtrak Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
 </div>
 
-<div class="pure-g center">
-  {#each months as month}
-    <div id="cal-heatmap-{month}">
-    </div>
-  {/each}
+<div class="container mx-auto">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+    {#each months as month}
+      <div class="flex justify-center" id="cal-heatmap-{month}">
+      </div>
+    {/each}
+  </div>
 </div>
