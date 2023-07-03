@@ -31,7 +31,7 @@
     "tslib": "^2.6.0",
     "typescript": "^5.1.6",
     "vite": "^4.3.9",
-    "vitest": "^0.32.2",
+    "vitest": "^0.32.4",
     "postcss": "^8.4.24",
     "postcss-load-config": "^4.0.1",
     "autoprefixer": "^10.4.14",
