@@ -42,7 +42,7 @@
   })
 </script>
 
-<div class="container mx-auto">
+<div class="container mt-5">
   {#if canIGoToday}
     <h2 class="response running"> YES <small>(however)</small></h2>
   {:else}
