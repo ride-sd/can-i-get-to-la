@@ -1,11 +1,11 @@
 [build]
 command = "yarn build"
-publish = "dist"
+publish = "build"
 
 [context.deploy-preview]
 command = "yarn build"
-publish = "dist"
+publish = "build"
 
 [context.branch-deploy]
 command = "yarn build"
-publish = "dist"
+publish = "build"
