@@ -1168,10 +1168,10 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
-flowbite-svelte@^0.39.1:
-  version "0.39.1"
-  resolved "https://registry.yarnpkg.com/flowbite-svelte/-/flowbite-svelte-0.39.1.tgz#a5a59c1dabddb9cf8c0523985893fe90d078e95f"
-  integrity sha512-HhqP0+RITqisIDOJf5+UprkIf2Vi8Lioq52MMEUKqS8xET33luAiqtQU/1RRLJABCijm1pcbPIO/QDZFJ/TtTA==
+flowbite-svelte@^0.39.2:
+  version "0.39.2"
+  resolved "https://registry.yarnpkg.com/flowbite-svelte/-/flowbite-svelte-0.39.2.tgz#9c53db5db0b75b7e9b725adfb98e078d7d3b36f1"
+  integrity sha512-wNv5f4ZbXBQgOiqMCSzbdCdUas+DuWVrOCYZQFMGc2m+GNbEk5q6V+WCfN9Uiw15DaJp2Y3GC/iA945TiQYMFA==
   dependencies:
     "@popperjs/core" "^2.11.8"
     flowbite "^1.6.6"
