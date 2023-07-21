@@ -137,6 +137,18 @@
   resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.5.1.tgz#cdd35dce4fa1a89a4fd42b1599eb35b3af408884"
   integrity sha512-Z5ba73P98O1KUYCCJTUeVpja9RcGoMdncZ6T49FCUl2lN38JtCJ+3WgIDBv0AuY4WChU5PmtJmOCTlN6FZTFKQ==
 
+"@floating-ui/core@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.3.1.tgz#4d795b649cc3b1cbb760d191c80dcb4353c9a366"
+  integrity sha512-Bu+AMaXNjrpjh41znzHqaz3r2Nr8hHuHZT6V2LBKMhyMl0FgKA62PNYbqnfgmzOhoWZj70Zecisbo4H1rotP5g==
+
+"@floating-ui/dom@^1.4.5":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.4.5.tgz#336dfb9870c98b471ff5802002982e489b8bd1c5"
+  integrity sha512-96KnRWkRnuBSSFbj0sFGwwOUd8EkiecINVl0O9wiZlZ64EkpyAOG3Xc2vKKNJmru0Z7RqWNymA+6b8OZqjgyyw==
+  dependencies:
+    "@floating-ui/core" "^1.3.1"
+
 "@iarna/toml@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
@@ -1134,16 +1146,16 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
-flowbite-svelte@^0.39.2:
-  version "0.39.2"
-  resolved "https://registry.yarnpkg.com/flowbite-svelte/-/flowbite-svelte-0.39.2.tgz#9c53db5db0b75b7e9b725adfb98e078d7d3b36f1"
-  integrity sha512-wNv5f4ZbXBQgOiqMCSzbdCdUas+DuWVrOCYZQFMGc2m+GNbEk5q6V+WCfN9Uiw15DaJp2Y3GC/iA945TiQYMFA==
+flowbite-svelte@^0.40.1:
+  version "0.40.1"
+  resolved "https://registry.yarnpkg.com/flowbite-svelte/-/flowbite-svelte-0.40.1.tgz#95c050d369b2609319dfa067aeb9f625a5baaa53"
+  integrity sha512-NtAfgMKfh/UyrE7hM4uVqai4xAn8gjmLvK5ekv4GHHhgOgypsLlYiPmqz+zLHRIwNbBw9SJwzK6BclCie1Apfw==
   dependencies:
-    "@popperjs/core" "^2.11.8"
-    flowbite "^1.6.6"
+    "@floating-ui/dom" "^1.4.5"
+    flowbite "^1.7.0"
     tailwind-merge "^1.13.2"
 
-flowbite@^1.6.6, flowbite@^1.7.0:
+flowbite@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/flowbite/-/flowbite-1.7.0.tgz#82359dbd5e3b2b9591eaf18ea929fb77871346b2"
   integrity sha512-OTTmnhRgv85Rs+mcMaVU7zB6EvRQs7BaQziyMUsZLRjW9aUpeQyqKjLmxsVMMCdr8isYPCLd6UL7X1IaSVI0WQ==
