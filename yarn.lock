@@ -257,10 +257,10 @@
     esbuild "^0.18.11"
     set-cookie-parser "^2.6.0"
 
-"@sveltejs/kit@^1.22.2":
-  version "1.22.2"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.22.2.tgz#2595a4f2d698a41cfa90607a7fa015fdf194e5eb"
-  integrity sha512-T6GY5jSfQgoDnNPNqAuDi9IK+ZW0TspzTV16UAN6GTsxbri67DGVIbw7QOXPg8FMrZQMmda1AtAxPMfXbOqCgw==
+"@sveltejs/kit@^1.22.5":
+  version "1.22.5"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.22.5.tgz#e666067439c94f36352b954f67960c5a0a62a047"
+  integrity sha512-LHq+ECucoT6c6/tkrxIQtD8KVNhPFV4QQ+xOKTwBAs/Qdtff8P5gAzsIZiwEaaO6J6sYZoy5RP2VR6m8PSCgLA==
   dependencies:
     "@sveltejs/vite-plugin-svelte" "^2.4.1"
     "@types/cookie" "^0.5.1"
@@ -273,7 +273,7 @@
     sade "^1.8.1"
     set-cookie-parser "^2.6.0"
     sirv "^2.0.2"
-    undici "~5.22.0"
+    undici "~5.23.0"
 
 "@sveltejs/vite-plugin-svelte-inspector@^1.0.3":
   version "1.0.3"
@@ -2036,10 +2036,10 @@ ufo@^1.1.2:
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.1.2.tgz#d0d9e0fa09dece0c31ffd57bd363f030a35cfe76"
   integrity sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ==
 
-undici@~5.22.0:
-  version "5.22.1"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.22.1.tgz#877d512effef2ac8be65e695f3586922e1a57d7b"
-  integrity sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==
+undici@~5.23.0:
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.23.0.tgz#e7bdb0ed42cebe7b7aca87ced53e6eaafb8f8ca0"
+  integrity sha512-1D7w+fvRsqlQ9GscLBwcAJinqcZGHUKjbOmXdlE/v8BvEGXjeWAax+341q44EuTcHXXnfyKNbKRq4Lg7OzhMmg==
   dependencies:
     busboy "^1.6.0"
 
