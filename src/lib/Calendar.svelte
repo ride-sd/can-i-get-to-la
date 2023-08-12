@@ -5,10 +5,13 @@
   import { nonRunningDays, totalDays, currentlyRunning, groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
   import spreadSheet from './../data/spreadsheet.json';
 
-  const data = generateDailyOverview(spreadSheet, new Date(2023, 0, 1));
+  const data = generateDailyOverview(spreadSheet, new Date(Date.UTC(2023, 0, 1)));
+  console.log("data", data)
   const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
+  console.log("groupedData", groupedData)
 
   const months = Object.keys(groupedData);
+  console.log("months", months)
   const canIGoToday = currentlyRunning(data);
 
   const nonRunning = nonRunningDays(data);
@@ -33,7 +36,7 @@
     Object.entries(groupedData).forEach(([month, dataSet]) => {
       const monthOptions = {
         itemSelector: `#cal-heatmap-${month}`,
-        date: { start: new Date(`${month}-01T00:00:00`) },
+        date: { start: new Date(`${month}-01T00:00:00+00:00`) },
         data: { source: dataSet, x: 'date', y: 'value', groupY: 'min' },
       }
 
