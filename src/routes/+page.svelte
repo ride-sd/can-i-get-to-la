@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="Can I Take the Train to LA Today?" />
   <meta name="description" content="Tracking if the Amtrak Pacific Surfliner is running between San Diego and Los Angeles or if it's falling into the Pacific Ocean 🌊" />
