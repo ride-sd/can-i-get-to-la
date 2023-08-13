@@ -5,7 +5,7 @@
   import { nonRunningDays, totalDays, currentlyRunning, groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
   import spreadSheet from './../data/spreadsheet.json';
 
-  const data = generateDailyOverview(spreadSheet, new Date(Date.UTC(2023, 0, 1)));
+  const data = generateDailyOverview(spreadSheet, new Date(Date.UTC(2022, 10, 1)));
   console.log("data", data)
   const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
   console.log("groupedData", groupedData)
@@ -53,8 +53,12 @@
  {/if}
 </div>
 
-<div class="pure-g center">
+<div class="pure-g center" style="margin-bottom: 3em;">
   <p class="explanation"> The Amtrak Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
+  <a href="https://www.ridesd.org/lossan" target="_blank"><button class="button-large pure-button button-success">Let's Do Something About It</button></a>
+</div>
+
+<div class="pure-g center">
 </div>
 
 <div class="pure-g center">
