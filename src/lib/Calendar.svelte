@@ -5,7 +5,7 @@
   import { nonRunningDays, totalDays, currentlyRunning, groupBy, generateDailyOverview, systemDarkModeToTheme} from './utils';
   import spreadSheet from './../data/spreadsheet.json';
 
-  const data = generateDailyOverview(spreadSheet, new Date(Date.UTC(2023, 0, 1)));
+  const data = generateDailyOverview(spreadSheet, new Date(Date.UTC(2022, 10, 1)));
   console.log("data", data)
   const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
   console.log("groupedData", groupedData)
