@@ -54,7 +54,7 @@
 </div>
 
 <div class="pure-g center" style="margin-bottom: 3em;">
-  <p class="explanation"> The Amtrak Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of {total} days this year ({nonRunningPercent}%)</p>
+  <p class="explanation"> The Amtrak Pacific Surfliner has been interrupted between San Diego and Los Angeles for {nonRunning} out of the last {total} days ({nonRunningPercent}%)</p>
   <a href="https://www.ridesd.org/lossan" target="_blank"><button class="button-large pure-button button-success">Let's Do Something About It</button></a>
 </div>
 
