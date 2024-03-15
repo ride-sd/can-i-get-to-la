@@ -57,7 +57,7 @@ export function currentlyRunning(data: CalendarDataPoint[]): boolean {
     return isRunning(dataPoint)
   }
 
-  dataPoint = data.slice(-1)
+  dataPoint = data.slice(-1)[0]
 
   if(dataPoint) {
     return isRunning(dataPoint)
