@@ -6,12 +6,9 @@
   import spreadSheet from './../data/spreadsheet.json';
 
   const data = generateDailyOverview(spreadSheet, new Date(Date.UTC(2022, 10, 1)));
-  console.log("data", data)
   const groupedData = groupBy(data, (dataPoint) => dataPoint.date.slice(0, 7))
-  console.log("groupedData", groupedData)
 
   const months = Object.keys(groupedData);
-  console.log("months", months)
   const canIGoToday = currentlyRunning(data);
 
   const nonRunning = nonRunningDays(data);
