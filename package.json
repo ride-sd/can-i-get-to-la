@@ -16,7 +16,7 @@
     "svelte-check": "^3.8.5",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5",
-    "vite": "^4.5.3"
+    "vite": "^4.5.13"
   },
   "dependencies": {
     "cal-heatmap": "^4.2.4"
