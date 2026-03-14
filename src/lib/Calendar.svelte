@@ -247,6 +247,14 @@
         color: #999;
     }
 
+    @media (prefers-color-scheme: dark) {
+        .future,
+        .no-data {
+            background-color: #3a3a3a;
+            color: #777;
+        }
+    }
+
     @media (max-width: 768px) {
         .year-grid {
             grid-template-columns: repeat(2, 1fr);
