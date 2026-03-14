@@ -1,124 +1,124 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+    color: #535bf2;
 }
 
 .center {
-  justify-content: center;
+    justify-content: center;
 }
 
 h1 {
-  line-height: 1.1;
+    line-height: 1.1;
 }
 
 .title {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-size: 3.2em;
+    line-height: 1.1;
 }
 
 .response {
-  font-size: 4.8em;
-  line-height: 1.1;
+    font-size: 4.8em;
+    line-height: 1.1;
 }
 
 .running {
-  color: rgb(26, 152, 80);
+    color: rgb(26, 152, 80);
 }
 
 small {
-  font-size: 20%;
+    font-size: 20%;
 }
 
 .not-running {
-  color: rgb(244, 109, 67);
+    color: rgb(244, 109, 67);
 }
 
 .explanation {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .logo {
-  height: 3.2em;
+    height: 3.2em;
 }
 
 .button-success,
 .button-error,
 .button-warning,
 .button-secondary {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .button-success {
-  background: rgb(26, 152, 80);
+    background: rgb(26, 152, 80);
 }
 
 .button-error {
-  background: rgb(244, 109, 67);
-  /* this is a maroon */
+    background: rgb(244, 109, 67);
+    /* this is a maroon */
 }
 
 .button-xsmall {
-  font-size: 70%;
+    font-size: 70%;
 }
 
 .button-small {
-  font-size: 85%;
+    font-size: 85%;
 }
 
 .button-large {
-  font-size: 110%;
+    font-size: 110%;
 }
 
 .button-xlarge {
-  margin: 2.4em;
-  font-size: 125%;
-  font-weight: bold;
+    margin: 2.4em;
+    font-size: 125%;
+    font-weight: bold;
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-  #app {
-    padding: 1rem;
-  }
+    #app {
+        padding: 1rem;
+    }
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
 }
